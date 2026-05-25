@@ -38,7 +38,7 @@ export default function Home() {
         <div className="absolute bottom-[-200px] right-[-100px] h-[700px] w-[700px] rounded-full bg-orange-500/20 blur-[140px]" />
 
         {/* Navbar */}
-        <nav className="absolute top-0 left-0 z-30 flex w-full items-center justify-between px-6 py-6 md:px-14 md:py-10 bg-gradient-to-b from-black/50 to-transparent">
+        <nav className="absolute top-0 left-0 z-30 flex w-full items-center justify-between px-6 py-6 md:px-6 md:px-14 md:py-10 bg-gradient-to-b from-black/50 to-transparent">
 
           <div className="flex items-center gap-3 md:gap-6">
 
@@ -81,7 +81,7 @@ export default function Home() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative z-20 flex h-full items-center px-14">
+        <div className="relative z-20 flex h-full items-center px-6 md:px-14">
 
           {/* LEFT TEXT */}
           <div className="max-w-3xl">
@@ -90,7 +90,7 @@ export default function Home() {
               Engineered For Performance
             </p>
 
-            <h1 className="text-7xl font-black uppercase leading-[0.92] xl:text-[110px]">
+            <h1 className="text-4xl md:text-7xl font-black uppercase leading-[0.92] xl:text-[110px]">
 
               ENGINEERED
               <br />
@@ -137,7 +137,7 @@ export default function Home() {
         {/* BESS Shadow */}
 
 {/* BESS */}
-<div className="absolute bottom-[-90px] right-[220px] z-10 opacity-72">
+<div className="hidden md:block absolute bottom-[-90px] right-[220px] z-10 opacity-72">
 
   <img
     src="/bess.png"
@@ -151,7 +151,7 @@ export default function Home() {
 <div className="absolute bottom-[0px] right-[40px] h-[70px] w-[500px] bg-black/30 blur-3xl" />
 
 {/* Truck */}
-<div className="absolute bottom-[-60px] right-[-360px] z-20 opacity-95 float-truck">
+<div className="hidden md:block absolute bottom-[-60px] right-[-360px] z-20 opacity-95 float-truck">
 
   <img
     src="/truck.png"
@@ -170,7 +170,7 @@ export default function Home() {
       {/* SOLUTIONS SECTION */}
       <section
      id="solutions"
-     className="relative bg-black px-14 py-24"
+     className="relative bg-black px-6 md:px-6 md:px-14 py-24"
 >
 
         <div className="mb-14">
@@ -187,7 +187,7 @@ export default function Home() {
 
         </div>
 
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
           {/* Card 1 */}
           <div className="group relative overflow-hidden border border-white/10 bg-white/[0.02] backdrop-blur-sm p-10 transition duration-300 hover:border-orange-400 hover:bg-white/[0.04] hover:-translate-y-1">
@@ -255,7 +255,7 @@ export default function Home() {
       {/* PROJECTS SECTION */}
       <section
         id="projects"
-      className="relative bg-[#050505] px-14 py-24">
+      className="relative bg-[#050505] px-6 md:px-6 md:px-14 py-24">
 
   <div className="mb-16">
 
@@ -271,7 +271,7 @@ export default function Home() {
 
   </div>
 
-  <div className="grid grid-cols-3 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
     {/* Project 1 */}
     <div className="group overflow-hidden border border-white/10 bg-white/[0.03]">
@@ -354,10 +354,10 @@ export default function Home() {
 {/* ABOUT SECTION */}
 <section
   id="about"
-  className="relative border-t border-white/10 bg-black px-14 py-32"
+  className="relative border-t border-white/10 bg-black px-6 md:px-6 md:px-14 py-32"
 >
 
-  <div className="grid grid-cols-2 gap-20 items-center">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
     {/* LEFT */}
     <div>
@@ -404,7 +404,7 @@ export default function Home() {
 {/* CONTACT SECTION */}
 <section
   id="contact"
-  className="relative border-t border-white/10 bg-[#050505] px-14 py-32"
+  className="relative border-t border-white/10 bg-[#050505] px-6 md:px-6 md:px-14 py-32"
 >
 
   <div className="max-w-5xl">
@@ -424,7 +424,7 @@ export default function Home() {
       mining electrification, and industrial power infrastructure projects.
     </p>
 
-    <div className="mt-16 grid grid-cols-3 gap-10">
+    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10">
 
       <div>
         <p className="mb-3 text-sm uppercase tracking-[0.3em] text-orange-400">
