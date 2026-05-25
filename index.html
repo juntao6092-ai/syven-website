@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GridNova Energy</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0b0f14;
+      color:white;
+    }
+
+    header{
+      position:fixed;
+      width:100%;
+      top:0;
+      left:0;
+      padding:20px 60px;
+      background:rgba(0,0,0,0.6);
+      backdrop-filter:blur(10px);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+      color:#00c3ff;
+    }
+
+    nav a{
+      margin-left:30px;
+      text-decoration:none;
+      color:white;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#00c3ff;
+    }
+
+    .hero{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      background:
+      linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=2000');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-content h1{
+      font-size:72px;
+      margin-bottom:20px;
+      animation:fadeUp 1s ease;
+    }
+
+    .hero-content p{
+      font-size:24px;
+      color:#cccccc;
+      margin-bottom:40px;
+      animation:fadeUp 1.5s ease;
+    }
+
+    .btn{
+      padding:15px 35px;
+      background:#00c3ff;
+      border:none;
+      color:white;
+      font-size:18px;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#0095c7;
+      transform:translateY(-3px);
+    }
+
+    .section{
+      padding:100px 60px;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:48px;
+      margin-bottom:60px;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#111827;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:30px;
+    }
+
+    .card-content h3{
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .card-content p{
+      color:#c0c0c0;
+      line-height:1.6;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      background:black;
+      color:#888;
+    }
+
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+
+      header{
+        padding:20px;
+      }
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      .section{
+        padding:80px 20px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">GridNova Energy</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Solutions</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Battery Energy Storage Solutions</h1>
+
+      <p>
+        BYD • Longking • Industrial Energy Systems
+      </p>
+
+      <button class="btn">Explore Solutions</button>
+
+    </div>
+
+  </section>
+
+  <section class="section">
+
+    <h2 class="section-title">
+      Our Solutions
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1497436072909-f5e4be7f321f?q=80&w=1200">
+
+        <div class="card-content">
+          <h3>Utility Scale BESS</h3>
+
+          <p>
+            High-performance grid-scale battery systems for peak shaving,
+            renewable integration and backup power.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200">
+
+        <div class="card-content">
+          <h3>Industrial Energy</h3>
+
+          <p>
+            Smart industrial energy storage systems for factories,
+            mining operations and critical infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200">
+
+        <div class="card-content">
+          <h3>Microgrid Systems</h3>
+
+          <p>
+            Integrated solar, battery and diesel hybrid microgrid solutions
+            for remote and industrial applications.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 GridNova Energy
+  </footer>
+
+</body>
+</html>
