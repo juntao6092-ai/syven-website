@@ -40,15 +40,15 @@ export default function Home() {
         {/* Navbar */}
         <nav className="absolute top-0 left-0 z-30 flex w-full items-center justify-between px-6 py-6 md:px-6 md:px-14 md:py-10 bg-gradient-to-b from-black/50 to-transparent">
 
-          <div className="flex items-center gap-3 md:gap-6">
+          <div className="flex items-center gap-3 md:gap-5">
 
   <img
   src="/logo.png"
   alt="SYVEN ENERGY"
-  className="h-[48px] md:h-[120px] w-auto object-contain"
+  className="h-[48px] md:h-[78px] w-auto object-contain w-auto object-contain"
 />
 
-  <div className="text-[16px] md:text-[28px] font-black tracking-[0.14em] leading-none">
+  <div className="text-[16px] md:text-[24px] font-black tracking-[0.14em] leading-none">
     SYVEN ENERGY
   </div>
 
@@ -81,7 +81,7 @@ export default function Home() {
         </nav>
 
         {/* Hero Content */}
-        <div className="relative z-20 flex h-full items-center px-6 md:px-14">
+        <div className="relative z-20 flex h-full items-center pt-24 md:pt-0 px-6 md:px-14">
 
           {/* LEFT TEXT */}
           <div className="max-w-3xl">
