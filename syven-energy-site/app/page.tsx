@@ -38,23 +38,23 @@ export default function Home() {
         <div className="absolute bottom-[-200px] right-[-100px] h-[700px] w-[700px] rounded-full bg-orange-500/20 blur-[140px]" />
 
         {/* Navbar */}
-        <nav className="absolute top-0 left-0 z-30 flex w-full items-center justify-between px-14 py-10 bg-gradient-to-b from-black/50 to-transparent">
+        <nav className="absolute top-0 left-0 z-30 flex w-full items-center justify-between px-6 py-6 md:px-14 md:py-10 bg-gradient-to-b from-black/50 to-transparent">
 
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 md:gap-6">
 
   <img
   src="/logo.png"
   alt="SYVEN ENERGY"
-  className="h-[120px] w-auto object-contain"
+  className="h-[48px] md:h-[120px] w-auto object-contain"
 />
 
-  <div className="text-[28px] font-black tracking-[0.14em] leading-none">
+  <div className="text-[16px] md:text-[28px] font-black tracking-[0.14em] leading-none">
     SYVEN ENERGY
   </div>
 
 </div>
 
-          <div className="flex items-center gap-10 text-sm uppercase tracking-[0.12em] text-white/70">
+          <div className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.12em] text-white/70">
 
             <a href="#solutions" className="hover:text-orange-400 transition">
               Solutions
